@@ -1,8 +1,8 @@
 var myName = prompt('Как вас зовут?');
-var mySecondName = prompt('Введите вашу фамилию')
+var mySecondName = prompt('Введите вашу фамилию');
 var myBirthYear = prompt('Ведите ваш год рождения');
 
-var currentYear = 2019;
+var currentYear = new Date().getFullYear();
 var age = currentYear - myBirthYear;
 
 if (age < 20) {
