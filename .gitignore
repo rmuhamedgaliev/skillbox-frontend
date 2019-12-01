@@ -141,3 +141,5 @@ public/
 .idea
 
 **/*.zip
+
+**/node_modules
