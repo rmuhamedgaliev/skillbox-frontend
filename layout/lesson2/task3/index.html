@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание 3. Верстка форм</title>
+    </head>
+    <body>
+
+        <main>
+            <h1>Отправка заявки на конференцию</h1>
+
+            <form method="post">
+
+                <section>
+                    <h2>Основные данные</h2>
+
+                    <h3>* Фамилия, имя, отчество:</h3>
+                    <input name="name"
+                           required="required"
+                           size="50"
+                           type="text">
+
+
+                    <h3>Дата рождения:</h3>
+                    <input name="dob"
+                           type="date">
+
+                    <h3>Пол:</h3>
+                    <input name="gender"
+                           type="radio"> Мужской
+                    <input name="gender"
+                           type="radio"> Женский
+
+                </section>
+
+                <section>
+                    <h2>Данные для создания личного кабинета</h2>
+
+                    <h3>* Адрес электронной почты:</h3>
+                    <input name="email"
+                           required="required"
+                           size="50"
+                           type="email">
+
+                    <h3>* Пароль:</h3>
+                    <input minlength="8"
+                           name="password"
+                           required="required"
+                           size="50"
+                           type="password">
+
+                    <h3>* Подтверждние пароля:</h3>
+                    <input minlength="8"
+                           name="password_confirm"
+                           required="required"
+                           size="50"
+                           type="password">
+
+                </section>
+
+                <section>
+                    <h2>Материалы конференции</h2>
+
+                    <h3>* Тема доклада:</h3>
+                    <input name="theme"
+                           required="required"
+                           size="50"
+                           type="text">
+
+                    <h3>* Тезисы доклада:</h3>
+                    <textarea cols="50"
+                              maxlength="1000"
+                              name="thesis"
+                              required="required"
+                              rows="20"></textarea>
+
+                    <h3>Файл презентации:</h3>
+                    <input name="slides"
+                           size="50"
+                           type="file">
+
+                </section>
+
+                <section>
+                    <h2>Дополнительные опции</h2>
+
+                    <p>
+                        <input id="live"
+                               name="live"
+                               type="checkbox">
+                        <label for="live">Проживание в отеле</label>
+                    </p>
+                    <p>
+                        <input id="breakfast"
+                               name="breakfast"
+                               type="checkbox">
+                        <label for="breakfast">Завтрак</label>
+                    </p>
+                    <p>
+                        <input id="lunch"
+                               name="lunch"
+                               type="checkbox">
+                        <label for="lunch">Обед</label>
+                    </p>
+                    <p>
+                        <input id="dinner"
+                               name="dinner"
+                               type="checkbox">
+                        <label for="dinner">Ужин</label>
+                    </p>
+                </section>
+
+                <hr>
+                <input type="submit">
+                <hr>
+                <p>
+                    * поля отмеченные звездочкой являются обязательными
+                </p>
+
+
+            </form>
+
+
+        </main>
+
+    </body>
+</html>
