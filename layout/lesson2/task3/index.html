@@ -9,112 +9,134 @@
         <main>
             <h1>Отправка заявки на конференцию</h1>
 
-            <form method="post">
+            <form action="https://echo.htmlacademy.ru"
+                  enctype="multipart/form-data"
+                  id="meetup"
+                  method="post">
 
-                <section>
-                    <h2>Основные данные</h2>
+                <fieldset form="meetup">
+                    <legend>Основные данные</legend>
 
-                    <h3>* Фамилия, имя, отчество:</h3>
-                    <input name="name"
+                    <label for="name">* Фамилия, имя, отчество:</label>
+                    <input id="name"
+                           name="name"
                            required="required"
                            size="50"
                            type="text">
 
 
-                    <h3>Дата рождения:</h3>
-                    <input name="dob"
+                    <label for="dob">Дата рождения:</label>
+                    <input id="dob"
+                           name="dob"
                            type="date">
 
-                    <h3>Пол:</h3>
-                    <input name="gender"
-                           type="radio"> Мужской
-                    <input name="gender"
-                           type="radio"> Женский
+                </fieldset>
 
-                </section>
+                <fieldset>
+                    <legend>Пол:</legend>
+                    <label>
+                        <input name="gender"
+                               type="radio"
+                               value="man"> Мужской
+                    </label>
+                    <label>
 
-                <section>
-                    <h2>Данные для создания личного кабинета</h2>
+                        <input name="gender"
+                               type="radio"
+                               value="female"> Женский
+                    </label>
+                </fieldset>
 
-                    <h3>* Адрес электронной почты:</h3>
-                    <input name="email"
+                <fieldset form="meetup">
+                    <legend>Данные для создания личного кабинета</legend>
+
+                    <label for="email">* Адрес электронной почты:</label>
+                    <input id="email"
+                           name="email"
                            required="required"
                            size="50"
                            type="email">
 
-                    <h3>* Пароль:</h3>
-                    <input minlength="8"
+                    <label for="password">* Пароль:</label>
+                    <input id="password"
+                           minlength="8"
                            name="password"
                            required="required"
                            size="50"
                            type="password">
 
-                    <h3>* Подтверждние пароля:</h3>
-                    <input minlength="8"
+                    <label for="password_confirm">* Подтверждние пароля:</label>
+                    <input id="password_confirm"
+                           minlength="8"
                            name="password_confirm"
                            required="required"
                            size="50"
                            type="password">
 
-                </section>
 
-                <section>
-                    <h2>Материалы конференции</h2>
+                </fieldset>
 
-                    <h3>* Тема доклада:</h3>
-                    <input name="theme"
+                <fieldset form="meetup">
+                    <legend>Материалы конференции</legend>
+
+                    <label for="theme">* Тема доклада:</label>
+                    <input id="theme"
+                           name="theme"
                            required="required"
                            size="50"
                            type="text">
 
-                    <h3>* Тезисы доклада:</h3>
+                    <label for="thesis">* Тезисы доклада:</label>
                     <textarea cols="50"
+                              id="thesis"
                               maxlength="1000"
                               name="thesis"
                               required="required"
                               rows="20"></textarea>
 
-                    <h3>Файл презентации:</h3>
-                    <input name="slides"
+                    <label for="slide">Файл презентации:</label>
+                    <input id="slide"
+                           name="slides"
                            size="50"
                            type="file">
 
-                </section>
+                </fieldset>
 
-                <section>
-                    <h2>Дополнительные опции</h2>
+                <fieldset form="meetup">
+                    <legend>Дополнительные опции</legend>
 
-                    <p>
-                        <input id="live"
-                               name="live"
-                               type="checkbox">
-                        <label for="live">Проживание в отеле</label>
-                    </p>
-                    <p>
-                        <input id="breakfast"
-                               name="breakfast"
-                               type="checkbox">
-                        <label for="breakfast">Завтрак</label>
-                    </p>
-                    <p>
-                        <input id="lunch"
-                               name="lunch"
-                               type="checkbox">
-                        <label for="lunch">Обед</label>
-                    </p>
-                    <p>
-                        <input id="dinner"
-                               name="dinner"
-                               type="checkbox">
-                        <label for="dinner">Ужин</label>
-                    </p>
-                </section>
+                    <input id="live"
+                           name="live"
+                           type="checkbox"
+                           value="live">
+                    <label for="live">Проживание в отеле</label>
+
+                    <input id="breakfast"
+                           name="breakfast"
+                           type="checkbox"
+                           value="breakfast">
+                    <label for="breakfast">Завтрак</label>
+
+                    <input id="lunch"
+                           name="lunch"
+                           type="checkbox"
+                           value="lunch">
+                    <label for="lunch">Обед</label>
+
+                    <input id="dinner"
+                           name="dinner"
+                           type="checkbox"
+                           value="dinner">
+                    <label for="dinner">Ужин</label>
+
+                </fieldset>
 
                 <hr>
                 <input type="submit">
                 <hr>
+
                 <p>
-                    * поля отмеченные звездочкой являются обязательными
+                    <small>* поля отмеченные звездочкой являются обязательными</small>
                 </p>
 
 
