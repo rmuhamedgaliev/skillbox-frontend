@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.top-bar {
+    background-color: #00122f;
+    color: white;
+    padding: 20px 0;
+}
+
+.top-bar a {
+    color: white;
+}
+
+.title {
+    float: left;
+}
+
+.datetime {
+    float: right;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.fixed-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.infrotmation-bar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.infrotmation-bar-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.left {
+    float: left;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.right {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    width: 121px;
+}
+
+.city-selector a {
+    margin-left: 60px;
+    text-decoration: none;
+    color: #448ccb;
+}
+
+.city {
+    border-bottom: dashed 1px #448ccb;
+}
+
+.down-arrow {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../img/down-arrow.png");
+    background-repeat: no-repeat;
+    height: 5px;
+    width: 10px;
+
+    margin-left: 9px;
+}
+
+.search-form {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    width: 320px;
+    height: 40px;
+    border: 0;
+    background-color: #ebebeb;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 40px;
+
+    font-size: 14px;
+    font-family: "Arial Regular";
+    font-weight: lighter;
+
+    outline: 0;
+}
+
+.search-button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url('../img/search.png') no-repeat 50% 50%;
+    background-size: 50%;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+
+.weather-container {
+    margin-right: 10px;
+    width: 100px;
+}
+
+.weather {
+    font-size: 14px;
+    color: #91919f;
+}
+
+.weather-icon {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../img/weather.png");
+
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 29px;
+    margin-right: 5px;
+}
