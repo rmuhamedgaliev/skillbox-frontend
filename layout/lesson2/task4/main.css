@@ -1,0 +1,29 @@
+table.statistics {
+    border-left: 1px solid black;
+    width: 50%;
+    border-spacing: 0;
+
+}
+
+td.statistics {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+th.statistics {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+th.end-head {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+tfoot.statistics {
+    font-weight: bold;
+}
